@@ -19,10 +19,8 @@ body {
 }
 
 .profile-pic {
-    width: 100px;         /* adjust size */
-    height: 100px;        /* same as width */
-    object-fit: cover;    /* keeps face centered */
-    border-radius: 10px;  /* or 50% for circle */
+    width: 100%;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
