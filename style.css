@@ -20,9 +20,8 @@ body {
 
 .profile-pic {
     width: 100%;
-    max-width: 350px;
-    border-radius: 30px;
-    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .name {
