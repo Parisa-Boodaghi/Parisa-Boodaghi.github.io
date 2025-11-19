@@ -37,7 +37,7 @@ body {
 .links a {
     display: block;
     margin-bottom: 8px;
-    color: #11bf5d;
+    color: #70cc81;
     text-decoration: none;
     font-weight: bold;
 }
@@ -62,7 +62,7 @@ body {
 
 h3 {
     margin-bottom: 10px;
-    border-bottom: 2px solid #7b33ff;
+    border-bottom: 2px solid #70cc81;
     display: inline-block;
     padding-bottom: 3px;
 }
