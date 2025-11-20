@@ -114,3 +114,8 @@ h3 {
     color: #3f6e40;
 }
 
+.grid ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
