@@ -6,9 +6,14 @@ body {
 }
 
 strong {
-    color: #569957;   /* your green */
+.intro a {
+    color: #569957;
+    text-decoration: none;   /* optional: remove underline */
 }
 
+.intro a:hover {
+    color: #3f6e40;          /* darker on hover */
+}
 /* Layout */
 .container {
     display: flex;
