@@ -22,14 +22,14 @@ body {
 .icon-links {
     display: flex;              /* puts everything in one line */
     align-items: center;        /* vertical alignment */
-    gap: 2px;                  /* spacing between items */
+    gap: 1px;                  /* spacing between items */
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
 
 .icon-links a {
-    font-size: 20px;              /* icon size */
+    font-size: 19px;              /* icon size */
     color: #569957;               /* purple */
     margin-right: 15px;           /* spacing */
     text-decoration: none;
