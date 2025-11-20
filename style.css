@@ -16,7 +16,7 @@ body {
     position: fixed;        /* keep it in place */
     top: 0;
     left: 0;
-    width: 300px;           /* make left side wider */
+    width: 260px;           /* make left side wider */
     height: 100vh;          /* fill full viewport height */
     background: #fafafa;
     padding: 30px;
@@ -73,6 +73,7 @@ body {
 .content {
     flex: 1;
     padding: 40px;
+    margin-left: 260px; 
 }
 
 .intro {
