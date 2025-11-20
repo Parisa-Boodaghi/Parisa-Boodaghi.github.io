@@ -4,14 +4,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #569957;
 }
-.intro a {
+/* .intro a {
     color: #569957;
     text-decoration: none;   /* optional: remove underline */
 }
 
 .intro a:hover {
     color: #3f6e40;          /* darker on hover */
-}
+} */
 
 /* Layout */
 .container {
