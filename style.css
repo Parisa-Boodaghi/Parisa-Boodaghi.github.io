@@ -26,13 +26,13 @@ body {
 
 .icon-links a {
     font-size: 26px;              /* icon size */
-    color: #7B3FF2;               /* purple */
+    color: #70cc81;               /* purple */
     margin-right: 15px;           /* spacing */
     text-decoration: none;
 }
 
 .icon-links a:hover {
-    color: #4a1fa4;               /* darker purple */
+    color: #70cc81;               /* darker purple */
 }
 
 
