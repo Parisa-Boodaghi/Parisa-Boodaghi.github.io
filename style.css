@@ -92,3 +92,8 @@ h3 {
 .news li {
     margin-bottom: 10px;
 }
+.highlight {
+    font-size: 22px;     /* larger font */
+    font-weight: bold;   /* bold */
+    color: #333;         /* or any color */
+}
