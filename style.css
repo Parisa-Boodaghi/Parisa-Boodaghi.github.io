@@ -20,9 +20,13 @@ body {
 }
 
 .icon-links {
+    display: flex;              /* puts everything in one line */
+    align-items: center;        /* vertical alignment */
+    gap: 18px;                  /* spacing between items */
     margin-top: 15px;
     margin-bottom: 20px;
 }
+
 
 .icon-links a {
     font-size: 26px;              /* icon size */
