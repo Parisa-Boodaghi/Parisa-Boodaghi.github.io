@@ -1,78 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Parisa – Personal Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      margin-bottom: 0.2em;
-    }
-    .email {
-      font-size: 0.95em;
-      color: #555;
-    }
-    a {
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-top: 32px;
-    }
-    .cv-button {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 18px;
-      border-radius: 6px;
-      border: 1px solid #222;
-      text-decoration: none;
-      font-weight: 500;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parisa — Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
-  <h1>Parisa [Last Name]</h1>
-  <div class="email">
-    PhD Candidate · Computer Science<br>
-    <a href="mailto:pxb7330@mavs.uta.edu">pxb7330@mavs.uta.edu</a> ·
-    <a href="mailto:pboodaghi@gmail.com">pboodaghi@gmail.com</a> ·
-    <a href="https://github.com/your-username" target="_blank">GitHub</a> · 
-    <a href="https://www.linkedin.com/in/parisa-boodaghi-malidarreh-07646b171/" target="_blank">LinkedIn</a>
-  </div>
 
-  <div class="section">
-    <h2>About</h2>
-    <p>
-     Hi, I'm a PhD candidate in Computer Science specializing in representation learning, generative modeling, 
-      and their applications in computational pathology and multimodal AI. My research focuses on designing 
-      and optimizing generative and representation-learning architectures—including transformer-based models,
-      VQ-based methods, GANs, and diffusion models—to efficiently compress, reconstruct, and interpret
-      high-dimensional visual and biological data.
+<div class="container">
+    
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <img src="files/photo.JPG" class="profile-pic" alt="Profile Photo">
+
+        <h2 class="name">Parisa Boodaghi Malidarreh</h2>
+        <p class="title">PhD Candidate • UT Arlington</p>
+
+    <div class="icon-links">
+    <a href="files/Parisa-Boodaghi-Malidarreh-TRI.pdf" target="_blank" class="cv-text">CV</a> 
+    <a href="https://scholar.google.com/citations?hl=en&user=VtHS_yEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
+    <a href="https://github.com/Parisa-Boodaghi" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/parisa-boodaghi-malidarreh-07646b171/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="mailto:pxb7330@mavs.uta.edu"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+<section>
+    <p class="intro">
+        Hi, I'm <span class="highlight">Parisa</span>!<br>
+        I work with 
+        <a href="https://luberlab.org/" target="_blank" class="advisor-link">
+        Dr. Jacob Luber
+        </a>
+
+        at <strong>UTA</strong>. 
+        My research focuses on 
+        <strong>representation learning</strong>, 
+        <strong>generative modeling</strong>, and 
+        <strong>multimodal AI</strong> with applications in high-dimensional medical imaging. 
+        My work centers on advancing representation learning and image generation techniques to model visual structure, improve
+        reconstruction quality, and extract meaningful patterns from complex images. I also worked on building image analysis systems
+        for multiplex Codex images, improving single-cell phenotyping to advance biomarker
+        discovery and precision medicine.
     </p>
-  </div>
+</section>
 
-  <div class="section">
-    <h2>Curriculum Vitae</h2>
-    <p>You can view or download my current CV here:</p>
-    <a class="cv-button" href="files/Parisa-Boodaghi-Malidarreh-TRI.pdf" target="_blank">View my CV (PDF)</a>
-  </div>
 
-  <div class="section">
-    <h2>Selected Works</h2>
-    <ul>
-      <li>Dual codebook VQ models for efficient visual tokenization.</li>
-      <li>Image compression and generative modeling for computational pathology.</li>
-      <li>Machine learning for spatial omics and biomedical applications.</li>
-    </ul>
-  </div>
+        <section class="grid">
+            <div>
+                <h3>Education</h3>
+                <p><strong>PhD in Computer Science</strong><br> University of Texas at Arlington (2022–Present)</p>
+                <p><strong>M.Sc. in Electrical Engineering</strong><br>Iran University of Science and Technology</p>
+                <p><strong>B.Sc. in Electrical Engineering</strong><br>Babol Noshirvani University of Technology</p>
+            </div>
+
+            <div>
+                <h3>Experience</h3>
+                <p><strong>Research Assistant</strong><br>UTA</p>
+                <p><strong>Computer Vision Intern</strong><br>Merck</p>
+            </div>
+
+            <div>
+                <h3>Research Interests</h3>
+                <ul>
+                    <li>Generative Modeling</li>
+                    <li>Representation Learning</li>
+                    <li>Computational Biology</li>
+                    <li>Multimodal Learning</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>Recent News</h3>
+            <ul class="news"> 
+                <li><strong>Nov 2025:</strong> I am delighted to inform that my first author paper <a href="https://arxiv.org/abs/2503.10832" target="_blank" class="advisor-link">
+                Dual Codebook VQ: Enhanced Image Reconstruction with Reduced Codebook Size" </a> is available online and is submitted at  Computer Vision and Pattern Recognition (CVPR) conference 2026.</li>
+               
+              
+                
+                <li><strong>Oct 2025:</strong> I am happy to inform that my first author submission <a href="https://www.mdpi.com/1422-0067/26/21/10338" target="_blank" class="advisor-link">“Machine Learning-Driven Prediction of 
+                    Spatiotemporal Dynamics of Active Nuclei During Drosophila Embryogenesis”</a> has been accepted at International Journal of Molecular Sciences (IJMS) 2025.</li>
+                
+                <li><strong>May 2025:</strong> Happy to announce that I will be spending the summer at   <a href="https://www.merck.com/" target="_blank" class="advisor-link">Merck</a> (Merck Research Laboratory) in South San Francisco, 
+                    California as an intern working to advance immune cell phenotyping and biomarker discovery by improving robust
+                    image analysis pipelines for Codex multiplex imaging.</li>
+                
+<!-- 
+<a href="https://www.mdpi.com/2073-4409/13/21/1759" target="_blank" class="advisor-link">Merck</a> -->
+               "Spatialvisvr: An Immersive, Multiplexed Medical Image Viewer" accepted at IEEE CIBCB 2024 
+                <li><strong>May 2024:</strong>  Our paper <a href="https://www.mdpi.com/2073-4409/13/21/1759" target="_blank" class="advisor-link">"Su(H) Modulates Enhancer Transcriptional
+                    Bursting in Prelude to Gastrulation" is published at Cells</a> </li>
+                
+                <li><strong>April 2024:</strong> New work <a href="https://arxiv.org/pdf/2306.17019" target="_blank" class="advisor-link">"Histopathology slide indexing and search—are we there yet?" published at NEJM AI 2024. </a> .</li>
+                
+                    <li><strong>April 2023:</strong> Our work <a href="https://arxiv.org/pdf/2303.13332" target="_blank" class="advisor-link">"Clinically Relevant Latent Space Embedding of Cancer Histopathology Slides
+                        through Variational Autoencoder Based Image Compression" accepted at ISBI 2023</a> </li>
+
+                
+                <!-- <li><strong>April 2024:</strong> New work on multimodal generative models.</li> -->
+            </ul>
+        </section>
+
+    </main>
+
+</div>
+
 </body>
 </html>
