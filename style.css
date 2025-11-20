@@ -12,6 +12,18 @@ body {
 }
 
 /* Sidebar */
+
+/* Make ALL sidebar icons green */
+.sidebar i {
+    color: #569957;   /* your green */
+    font-size: 20px;  /* adjust size if needed */
+}
+
+/* Optional: darker green on hover */
+.sidebar a:hover i {
+    color: #3f6e40;
+}
+
 .sidebar {
     position: fixed;        /* keep it in place */
     top: 0;
