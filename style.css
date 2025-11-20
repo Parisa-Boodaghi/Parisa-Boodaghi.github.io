@@ -8,22 +8,20 @@ body {
 
 /* Layout */
 .container {
-    display: flex;
-    min-height: 100vh
-    align-items: flex-start;
+    min-height: 100vh;
 }
 
 /* Sidebar */
 .sidebar {
-    width: 180px;
+    position: fixed;        /* keep it in place */
+    top: 0;
+    left: 0;
+    width: 260px;           /* make left side wider */
+    height: 100vh;          /* fill full viewport height */
     background: #fafafa;
     padding: 30px;
-    border-right: 2px solid #e6e6e6; 
-    
-    position: sticky;          /* makes it stay while scrolling */
-    top: 0;                    /* stick to top of viewport */
-    height: 100vh;             /* full viewport height */
-    box-sizing: border-box;    /* include padding in height */
+    border-right: 2px solid #e6e6e6;
+    box-sizing: border-box; /* include padding in width/height */
 }
 
 .icon-links {
