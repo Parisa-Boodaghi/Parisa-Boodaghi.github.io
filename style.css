@@ -31,7 +31,7 @@ body {
 .icon-links a {
     font-size: 19px;              /* icon size */
     color: #569957;               /* purple */
-    margin-right: 15px;           /* spacing */
+    margin-right: 5px;           /* spacing */
     text-decoration: none;
 }
 
