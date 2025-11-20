@@ -22,7 +22,7 @@ body {
 .icon-links {
     display: flex;              /* puts everything in one line */
     align-items: center;        /* vertical alignment */
-    gap: 1px;                  /* spacing between items */
+    gap: 2px;                  /* spacing between items */
     margin-top: 15px;
     margin-bottom: 20px;
 }
