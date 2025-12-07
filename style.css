@@ -22,9 +22,8 @@ body {
     position: sticky;
     top: 20px;
     width: 260px;
-    background: #fafafa;
     padding: 30px;
-    border-right: 6px solid #e6e6e6;
+    /* border-right: 6px solid #e6e6e6; */
     box-sizing: border-box;
     flex-shrink: 0;
 }
