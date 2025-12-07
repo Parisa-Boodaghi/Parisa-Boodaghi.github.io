@@ -17,7 +17,7 @@ body {
     position: fixed;        /* keep it in place */
     top: 0;
     left: 0;
-    width: 230px;           /* make left side wider */
+    width: 270px;           /* make left side wider */
     height: 100vh;          /* fill full viewport height */
     background: #fafafa;
     padding: 30px;
@@ -152,4 +152,5 @@ h3 {
     vertical-align: middle;
     margin-right: 8px;    /* space between logo and text */
     border-radius: 4px;   /* optional: softer edges */
+    outline: 2px solid red;
 }
