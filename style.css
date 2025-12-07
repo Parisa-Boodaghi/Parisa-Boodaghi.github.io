@@ -145,3 +145,11 @@ h3 {
 .right-column p {
     margin-bottom: 12px;
 }
+
+.exp-logo {
+    width: 22px;          /* small size */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;    /* space between logo and text */
+    border-radius: 4px;   /* optional: softer edges */
+}
