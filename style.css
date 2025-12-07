@@ -14,10 +14,12 @@ body {
 /* Sidebar */
 
 .sidebar {
-    position: fixed;        /* keep it in place */
-    top: 0;
-    left: 0;
-    width: 450px;           /* make left side wider */
+    /* position: fixed;        keep it in place */
+
+    position: sticky;       /* stays visible while scrolling */
+    top: 20px;              /* distance from top when stuck */
+    /* left: 0; */
+    width: 2800px;           /* make left side wider */
     height: 100vh;          /* fill full viewport height */
     background: #fafafa;
     padding: 30px;
@@ -74,7 +76,7 @@ body {
 .content {
     flex: 1;
     padding: 40px;
-    margin-left: 450px; 
+    /* margin-left: 450px;  */
 }
 
 .intro {
