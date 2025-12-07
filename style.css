@@ -17,7 +17,7 @@ body {
     position: fixed;        /* keep it in place */
     top: 0;
     left: 0;
-    width: 270px;           /* make left side wider */
+    width: 230px;           /* make left side wider */
     height: 100vh;          /* fill full viewport height */
     background: #fafafa;
     padding: 30px;
@@ -153,4 +153,10 @@ h3 {
     margin-right: 8px;    /* space between logo and text */
     border-radius: 4px;   /* optional: softer edges */
     outline: 2px solid red;
+}
+
+.page-wrapper {
+    max-width: 1200px;          /* controls how wide the whole layout can be */
+    margin: 0 auto;             /* centers the page horizontally */
+    padding: 0 40px;            /* optional: side padding so content never hits the edges */
 }
