@@ -7,34 +7,33 @@ body {
 
 /* Center the whole page block */
 .page-wrapper {
-    max-width: 1200px;          /* total width of your layout */
-    margin: 0 auto;             /* center it */
-    position: relative;         /* basis for calculations */
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
-/* We don't need flex here anymore */
 .container {
     min-height: 100vh;
 }
 
 /* === FIXED SIDEBAR, ALIGNED WITH CENTERED LAYOUT === */
 .sidebar {
-    position: fixed;            /* stays on screen while scrolling */
-    top: 40px;                  /* distance from top of window */
-
-    /* This matches the left edge of the centered 1200px area:
-       50% is center, minus half of 1200 = 600 */
+    position: fixed;
+    top: 40px;
     left: calc(50% - 600px);
-
     width: 260px;
+    height: calc(100vh - 80px); /* Full viewport height minus top/bottom margins */
     padding: 30px;
     box-sizing: border-box;
-    background: none;           /* or #fafafa if you want a panel */
+    background: none;
+    overflow-y: auto; /* Allows sidebar content to scroll if needed */
+    overflow-x: hidden;
+    z-index: 100; /* Ensures sidebar stays above content if needed */
 }
 
 /* Profile picture inside sidebar */
 .profile-pic {
-    width: 100%;        /* fills the 260px sidebar */
+    width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -73,10 +72,11 @@ body {
 
 /* === MAIN CONTENT (MOVED RIGHT SO SIDEBAR DOESN'T COVER IT) === */
 .content {
-    /* the left edge of the content starts 260px to the right
-       of the centered wrapper's left edge */
     margin-left: 260px;
     padding: 40px;
+    /* Ensure content doesn't get hidden behind fixed sidebar */
+    position: relative;
+    z-index: 1;
 }
 
 /* Intro text */
@@ -130,4 +130,34 @@ h3 {
 
 .advisor-link:hover {
     color: #3f6e40;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1240px) {
+    .sidebar {
+        left: 20px; /* Adjust for smaller screens */
+    }
+    
+    .content {
+        margin-left: 320px; /* Adjust content margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .two-columns {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
