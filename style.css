@@ -6,36 +6,72 @@ body {
 
 /* Center the whole layout */
 .page-wrapper {
-    max-width: 1200px;      /* controls total page width */
-    margin: 0 auto;         /* center on the screen */
-    padding: 40px 40px;     /* some top/bottom + side padding */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 40px;
 }
 
-/* Layout: sidebar + content next to each other */
+/* Layout: sidebar + content side by side */
 .container {
     min-height: 100vh;
-    display: flex;          /* put sidebar + content in a row */
+    display: flex;
 }
 
 /* Sidebar */
 .sidebar {
-    position: sticky;       /* stays visible while scrolling inside wrapper */
+    position: sticky;
     top: 20px;
-    
-    width: 260px;           /* reasonable width for sidebar */
-    /* height: 100vh; */    /* optional: remove for natural height */
+    width: 260px;
     background: #fafafa;
     padding: 30px;
     border-right: 6px solid #e6e6e6;
     box-sizing: border-box;
-    flex-shrink: 0;         /* don't let flexbox shrink the sidebar */
+    flex-shrink: 0;
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Sidebar text */
+.name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.icon-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.icon-links a {
+    font-size: 21px;
+    color: #569957;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.icon-links a:hover {
+    color: #3f6e40;
 }
 
 /* Main content */
 .content {
     flex: 1;
     padding: 40px;
-    /* no margin-left here anymore */
 }
 
 .intro {
@@ -43,16 +79,7 @@ body {
     line-height: 1.6;
 }
 
-/* ... the rest of your existing CSS ... */
-
-.grid {
-    list-style-type: none;
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
+/* Headings */
 h3 {
     margin-bottom: 5px;
     border-bottom: 2px solid #569957;
@@ -61,10 +88,29 @@ h3 {
     color: #666666;
 }
 
+/* Two-column section */
+.two-columns {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+}
+
+.left-column p,
+.right-column p {
+    margin-bottom: 12px;
+}
+
+/* News list */
 .news li {
     margin-bottom: 10px;
 }
 
+/* Links & extras */
 .highlight {
     font-size: 22px;
     font-weight: bold;
@@ -90,27 +136,4 @@ h3 {
     color: #777;
     font-size: 16px;
 }
-
-.two-columns {
-    display: flex;
-    gap: 60px;
-    margin-top: 40px;
-}
-
-.left-column,
-.right-column {
-    flex: 1;
-}
-
-.left-column p,
-.right-column p {
-    margin-bottom: 12px;
-}
-
-.exp-logo {
-    width: 22px;
-    height: auto;
-    vertical-align: middle;
-    margin-right: 8px;
-    border-radius: 4px;
-}
+   
