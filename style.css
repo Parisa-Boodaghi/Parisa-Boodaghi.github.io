@@ -1,88 +1,49 @@
-
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
 }
 
+/* Center the whole layout */
+.page-wrapper {
+    max-width: 1200px;      /* controls total page width */
+    margin: 0 auto;         /* center on the screen */
+    padding: 40px 40px;     /* some top/bottom + side padding */
+}
 
-/* Layout */
+/* Layout: sidebar + content next to each other */
 .container {
     min-height: 100vh;
+    display: flex;          /* put sidebar + content in a row */
 }
 
 /* Sidebar */
-
 .sidebar {
-    /* position: fixed;        keep it in place */
-
-    position: sticky;       /* stays visible while scrolling */
-    top: 20px;              /* distance from top when stuck */
-    /* left: 0; */
-    width: 2800px;           /* make left side wider */
-    height: 100vh;          /* fill full viewport height */
+    position: sticky;       /* stays visible while scrolling inside wrapper */
+    top: 20px;
+    
+    width: 260px;           /* reasonable width for sidebar */
+    /* height: 100vh; */    /* optional: remove for natural height */
     background: #fafafa;
     padding: 30px;
     border-right: 6px solid #e6e6e6;
-    box-sizing: border-box; /* include padding in width/height */
-}
-
-.icon-links {
-    display: flex;              /* puts everything in one line */
-    align-items: center;        /* vertical alignment */
-    gap: 5px;                  /* spacing between items */
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-
-.icon-links a {
-    font-size: 21px;              /* icon size */
-    color: #569957;               /* purple */
-    margin-right: 5px;           /* spacing */
-    text-decoration: none;
-}
-
-.icon-links a:hover {
-    color: #3f6e40;               /* darker purple */
-}
-
-
-.profile-pic {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.name {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.title {
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.links a {
-    display: block;
-    margin-bottom: 8px;
-    color: #569957;
-    text-decoration: none;
-    font-weight: bold;
+    box-sizing: border-box;
+    flex-shrink: 0;         /* don't let flexbox shrink the sidebar */
 }
 
 /* Main content */
 .content {
     flex: 1;
     padding: 40px;
-    /* margin-left: 450px;  */
+    /* no margin-left here anymore */
 }
 
 .intro {
     font-size: 18px;
     line-height: 1.6;
 }
+
+/* ... the rest of your existing CSS ... */
 
 .grid {
     list-style-type: none;
@@ -100,14 +61,14 @@ h3 {
     color: #666666;
 }
 
-
 .news li {
     margin-bottom: 10px;
 }
+
 .highlight {
-    font-size: 22px;     /* larger font */
-    font-weight: bold;   /* bold */
-    color: #333;         /* or any color */
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
 }
 
 .advisor-link {
@@ -123,24 +84,22 @@ h3 {
     list-style: none;
     padding-left: 0;
     margin-bottom: 10px;
-
-    
 }
 
 .edu-subtext {
-    color: #777;        /* light gray */
-    font-size: 16px;    /* optional: slightly smaller */
+    color: #777;
+    font-size: 16px;
 }
 
 .two-columns {
-    display: flex;          /* side-by-side layout */
-    gap: 60px;              /* space between columns */
+    display: flex;
+    gap: 60px;
     margin-top: 40px;
 }
 
 .left-column,
 .right-column {
-    flex: 1;                /* equal width columns */
+    flex: 1;
 }
 
 .left-column p,
@@ -149,16 +108,9 @@ h3 {
 }
 
 .exp-logo {
-    width: 22px;          /* small size */
+    width: 22px;
     height: auto;
     vertical-align: middle;
-    margin-right: 8px;    /* space between logo and text */
-    border-radius: 4px;   /* optional: softer edges */
-    outline: 2px solid red;
-}
-
-.page-wrapper {
-    max-width: 1200px;          /* controls how wide the whole layout can be */
-    margin: 0 auto;             /* centers the page horizontally */
-    padding: 0 40px;            /* optional: side padding so content never hits the edges */
+    margin-right: 8px;
+    border-radius: 4px;
 }
