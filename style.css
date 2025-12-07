@@ -19,7 +19,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    position: sticky;
+    position: fixed;
     top: 20px;
     width: 260px;
     padding: 30px;
@@ -117,12 +117,12 @@ h3 {
 }
 
 .advisor-link {
-    color: #428543;
+    color: #666666;
     text-decoration: none;
 }
 
 .advisor-link:hover {
-    color: #3f6e40;
+    color: #666666;
 }
 
 .grid ul {
