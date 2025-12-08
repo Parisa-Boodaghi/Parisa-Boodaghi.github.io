@@ -42,6 +42,7 @@ body {
 
 /* Sidebar text */
 .name {
+    color: #658ab8;
     font-size: 18px;
     margin-bottom: 5px;
 }
